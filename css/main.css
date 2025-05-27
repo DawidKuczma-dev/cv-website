@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+a {
+  all: unset;
+}
+
+body {
+  font-size: 16px;
+}
+
+.wrapper {
+  aspect-ratio: 1/1.414;
+  min-width: 660px;
+  height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0px 0px 100px -10px rgb(0, 0, 0);
+}/*# sourceMappingURL=main.css.map */
