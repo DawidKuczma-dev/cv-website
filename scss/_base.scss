@@ -1,11 +1,23 @@
+@use 'variables' as *;
+
 body {
+   font-family: $ff-primary;
+   background-color: $bg-color;
    font-size: 16px;
 }
 
 .wrapper {
+   overflow-x: hidden;
    aspect-ratio: 1 / 1.414;
    min-width: 660px;
+   max-width: 90vw;
    height: 100vh;
    margin: 0 auto;
    box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 1);
+}
+
+.sections {
+   display: flex;
+   justify-content: flex-end;
+   height: calc(100vh - 155px);
 }
