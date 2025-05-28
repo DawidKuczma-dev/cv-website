@@ -1,0 +1,109 @@
+@use 'variables' as *;
+
+.section-left {
+   padding: 75px 20px 0;
+   background-color: $sectionL-color;
+   width: 250px;
+   color: $bg-color;
+   border-left: 1px solid #efefef;
+   text-align: center;
+
+   &__title {
+      font-family: $ff-portfolio;
+      padding: 0 26px;
+      font-size: 2.2rem;
+      line-height: 1;
+      margin-bottom: 15px;
+   }
+   &__qr-code {
+      button {
+         background-color: $btn-color;
+         color: $sectionL-color;
+         font-weight: 700;
+         font-size: 0.8rem;
+         text-transform: uppercase;
+         font-family: $ff-portfolio;
+         padding: 5px 10px;
+         border-radius: 14px;
+         transition: 0.2s linear;
+         i.left {
+            padding-right: 2px;
+         }
+         i.right {
+            padding-left: 2px;
+         }
+      }
+      div {
+         cursor: pointer;
+         margin: 0 auto;
+         background-image: url('../assets/images/qrCode.png');
+         background-size: cover;
+         width: 70%;
+         aspect-ratio: 1;
+         transition: 0.2s linear;
+         &:hover {
+            background-image: url('../assets/images/qrCodeHover.png');
+         }
+      }
+   }
+   &__about-me {
+      margin-bottom: 15px;
+      h1 {
+         font-weight: 400;
+         padding-bottom: 5px;
+         font-size: 1.2rem;
+      }
+      p {
+         font-size: 0.75rem;
+      }
+   }
+   &__contact {
+      ul {
+         list-style-type: none;
+         padding-left: 0;
+         text-align: left;
+         li {
+            font-size: 0.8rem;
+            margin-bottom: 12px;
+            i {
+               background-color: $btn-color;
+               color: $sectionL-color;
+               padding: 5px;
+               border-radius: 50%;
+               margin-right: 8px;
+            }
+            &:last-child {
+               i {
+                  padding: 5px 6.6px;
+               }
+            }
+            a {
+               cursor: pointer;
+               &.small {
+                  font-size: 0.65rem;
+               }
+               &:hover {
+                  font-weight: 700;
+                  color: $btn-color;
+               }
+            }
+         }
+      }
+   }
+   &__language {
+      text-align: left;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      button {
+         text-align: center;
+         border: 2px solid $btn-color;
+         width: 100%;
+         padding: 4px 0;
+         border-radius: 18px;
+         margin-bottom: 10px;
+      }
+      li {
+         padding-bottom: 5px;
+      }
+   }
+}
