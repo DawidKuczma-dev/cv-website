@@ -1,0 +1,59 @@
+@use 'variables' as *;
+
+.section-right {
+   width: 375px;
+   box-shadow: inset 0px 72px 59px -77px rgba(0, 0, 0, 1), inset 1px 0 0 0 #b9b9b9;
+   padding: 15px 30px;
+   font-size: 0.75rem;
+   &__content {
+      div {
+         margin: 10px 0;
+         h2 {
+            font-size: 0.9rem;
+            span {
+               display: block;
+            }
+         }
+         ul {
+            padding: 5px 0 0 15px;
+            li {
+               margin-bottom: 5px;
+               span {
+                  font-weight: 700;
+                  font-size: 0.8rem;
+               }
+            }
+         }
+         p {
+            padding-top: 5px;
+            span {
+               font-weight: 700;
+               font-size: 0.8rem;
+            }
+         }
+      }
+      &--skills {
+         font-size: 0.8rem;
+      }
+      &--education {
+         div {
+            ul {
+               li:last-child {
+                  list-style-type: circle;
+               }
+            }
+         }
+      }
+      &--goals {
+         div {
+            margin: 5px 0 0;
+            ul {
+               display: flex;
+               justify-content: space-between;
+               font-size: 0.9rem;
+               font-weight: 700;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,69 @@
+@use 'variables' as *;
+
+.accordion {
+   position: relative;
+   &__tag {
+      display: flex;
+      background-color: $primary-color;
+      justify-content: space-between;
+      width: 190px;
+      color: $bg-color;
+      padding: 4px 10px;
+      border-radius: 13px;
+      text-align: center;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s linear;
+      i {
+         font-size: 1.1rem;
+         transition: 0.2s linear;
+      }
+      &:hover {
+         background-color: $sectionL-color;
+         font-weight: 500;
+         border-radius: 13px 13px 0 0;
+      }
+   }
+   &__content {
+      position: absolute;
+      left: 0;
+      width: 190px;
+      transform: scaleY(0) scaleX(1);
+      transform-origin: top;
+      background-color: $accordion-bg;
+      color: $bg-color;
+      border-radius: 0 0 13px 13px;
+      padding: 10px 15px;
+      font-size: 0.85rem;
+      text-align: left;
+      transition: 0.2s linear;
+      font-weight: 300;
+      line-height: 1.2;
+      &--last {
+         bottom: 27px;
+         transform-origin: bottom;
+         border-radius: 13px 13px 0 0;
+      }
+   }
+}
+
+.accordion__tag {
+   &[aria-expanded='true'] {
+      width: 100%;
+      border-radius: 13px 13px 0 0;
+      background-color: $sectionL-color;
+      font-weight: 500;
+      cursor: default;
+      i {
+         transform: rotate(180deg);
+      }
+      &.accordion__tag--last {
+         border-radius: 0 0 13px 13px;
+      }
+   }
+}
+
+.accordion__tag[aria-expanded='true'] + .accordion__content {
+   transform: scaleY(1);
+   width: 100%;
+}
