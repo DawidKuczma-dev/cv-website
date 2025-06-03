@@ -34,7 +34,7 @@
       color: $bg-color;
       border-radius: 0 0 13px 13px;
       padding: 10px 15px;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       text-align: left;
       transition: 0.2s linear;
       font-weight: 300;
@@ -44,6 +44,9 @@
          transform-origin: bottom;
          border-radius: 13px 13px 0 0;
       }
+   }
+   &__last {
+      margin-top: 45px;
    }
 }
 

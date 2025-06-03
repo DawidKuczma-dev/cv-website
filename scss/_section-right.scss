@@ -4,12 +4,12 @@
    width: 375px;
    box-shadow: inset 0px 72px 59px -77px rgba(0, 0, 0, 1), inset 1px 0 0 0 #b9b9b9;
    padding: 15px 30px;
-   font-size: 0.75rem;
+   font-size: 0.9rem;
    &__content {
       div {
          margin: 10px 0;
          h2 {
-            font-size: 0.9rem;
+            font-size: 1rem;
             span {
                display: block;
             }
@@ -20,7 +20,7 @@
                margin-bottom: 5px;
                span {
                   font-weight: 700;
-                  font-size: 0.8rem;
+                  font-size: 0.95rem;
                }
             }
          }
@@ -28,12 +28,12 @@
             padding-top: 5px;
             span {
                font-weight: 700;
-               font-size: 0.8rem;
+               font-size: 0.95rem;
             }
          }
       }
       &--skills {
-         font-size: 0.8rem;
+         font-size: 0.95rem;
       }
       &--education {
          div {
@@ -50,7 +50,7 @@
             ul {
                display: flex;
                justify-content: space-between;
-               font-size: 0.9rem;
+               font-size: 1rem;
                font-weight: 700;
             }
          }

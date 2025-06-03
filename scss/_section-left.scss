@@ -33,16 +33,21 @@
             padding-left: 2px;
          }
       }
-      div {
-         cursor: pointer;
-         margin: 0 auto;
-         background-image: url('../assets/images/qrCode.png');
-         background-size: cover;
+      a {
+         display: block;
          width: 70%;
-         aspect-ratio: 1;
-         transition: 0.2s linear;
-         &:hover {
-            background-image: url('../assets/images/qrCodeHover.png');
+         margin: 0 auto;
+         div {
+            cursor: pointer;
+            margin: 0 auto;
+            background-image: url('../assets/images/qrCode.png');
+            background-size: cover;
+            width: 100%;
+            aspect-ratio: 1;
+            transition: 0.2s linear;
+            &:hover {
+               background-image: url('../assets/images/qrCodeHover.png');
+            }
          }
       }
    }
@@ -54,7 +59,7 @@
          font-size: 1.2rem;
       }
       p {
-         font-size: 0.75rem;
+         font-size: 0.8rem;
       }
    }
    &__contact {
