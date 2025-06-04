@@ -87,6 +87,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
 }
 .header__title {
   position: absolute;
