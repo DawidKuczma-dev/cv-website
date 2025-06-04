@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,15 @@
    <body>
       <div class="wrapper">
          <header class="header">
+            <div class="lang-switcher">
+               <button data-lang="en" class="active">
+                  <img src="assets/images/gb.svg" alt="English" />
+               </button>
+               <button data-lang="pl">
+                  <img src="assets/images/pl.svg" alt="Polish" />
+               </button>
+            </div>
+            <div class="theme-toggle"></div>
             <div class="header__image">
                <video
                   autoplay
@@ -38,18 +47,18 @@
          </header>
          <main class="sections">
             <section class="section-left">
-               <h1 class="section-left__title">Zobacz moje portfolio</h1>
+               <h1 class="section-left__title" data-i18n="portfolio">Zobacz moje portfolio</h1>
                <div class="section-left__qr-code">
                   <button>
                      <i class="fa-solid fa-arrow-down left"></i>
-                     skan lub klik
+                     <span data-i18n="qr.bar">skan lub klik</span>
                      <i class="fa-solid fa-arrow-down right"></i>
                   </button>
                   <a href="https://dawidkuczma-dev.github.io/" target="_blank" rel="noopener noreferrer"><div></div></a>
                </div>
                <div class="section-left__about-me">
-                  <h1>O mnie</h1>
-                  <p>
+                  <h1 data-i18n="aboutMe.h1">O mnie</h1>
+                  <p data-i18n="aboutMe.p">
                      Samodzielnie rozwijam się w kierunku frontendu, tworząc projekty z wykorzystaniem HTML, SASS i
                      JavaScript. Lubię rozwiązywać problemy i przekładać pomysły na intuicyjne interfejsy użytkownika.
                      Szukam pierwszej okazji, by dołączyć do zespołu IT i rozwijać się w środowisku komercyjnym.
@@ -74,10 +83,10 @@
                   </ul>
                </div>
                <div class="section-left__language">
-                  <button>Języki</button>
+                  <button data-i18n="language.title">Języki</button>
                   <ul>
-                     <li>Polski (ojczysty)</li>
-                     <li>Angielski B2</li>
+                     <li data-i18n="language.polish">Polski (ojczysty)</li>
+                     <li data-i18n="language.english">Angielski B2</li>
                   </ul>
                </div>
             </section>
@@ -85,11 +94,11 @@
                <div class="accordion">
                   <button class="accordion__tag" aria-expanded="false">
                      <i class="fa-solid fa-arrow-down"></i>
-                     Umiejętności
+                     <span data-i18n="skills.tag">Umiejętności</span>
                      <i class="fa-solid fa-arrow-down"></i>
                   </button>
                   <div class="accordion__content">
-                     <p>
+                     <p data-i18n="skills.accordion">
                         Szczegółowe umiejętności najlepiej prezentuję w praktyce – zapraszam do zapoznania się z moim
                         portfolio, gdzie można zobaczyć realne projekty i zastosowane technologie.
                      </p>
@@ -101,24 +110,25 @@
                         <li>HTML5, CSS3, SASS</li>
                         <li>JavaScript (ES6+)</li>
                         <li>Git, GitHub</li>
-                        <li>Responsywne projektowanie (RWD)</li>
-                        <li>Tworzenie komponentów UI</li>
-                        <li>Podstawy SEO</li>
+                        <li data-i18n="skills.rwd">Responsywne projektowanie (RWD)</li>
+                        <li data-i18n="skills.ui">Tworzenie komponentów UI</li>
+                        <li data-i18n="skills.seo">Podstawy SEO</li>
                      </ul>
                   </div>
                </div>
                <div class="accordion">
                   <button class="accordion__tag" aria-expanded="false">
                      <i class="fa-solid fa-arrow-down"></i>
-                     Edukacja
+                     <span data-i18n="education.tag">Edukacja</span>
                      <i class="fa-solid fa-arrow-down"></i>
                   </button>
                   <div class="accordion__content">
-                     <p>
+                     <p data-i18n="education.accordion1">
                         Podjąłem decyzję o przerwaniu studiów, aby skupić się na samodzielnym rozwoju w Frontend
                         Developer z perspektywą full-stack. Intensywnie uczę się HTML5, CSS3 (w tym SASS), JavaScript
                         (ES6+) oraz React.
-                        <br />
+                     </p>
+                     <p data-i18n="education.accordion2">
                         Nauka odbywa się przez kursy online, praktyczne projekty i regularne ćwiczenia, a także
                         budowanie portfolio. Dzięki temu zdobywam aktualne, praktyczne umiejętności dopasowane do rynku
                         IT.
@@ -128,31 +138,33 @@
                <div class="section-right__content section-right__content--education">
                   <div>
                      <h2>
-                        Politechnika Krakowska
+                        <span data-i18n="education.studies">Politechnika Krakowska</span>
                         <span>2021-2024</span>
                      </h2>
                      <ul>
-                        <li>Elektrotechnika i Automatyka (3 semestry)</li>
-                        <li>Informatyka (1 semestr, kontynuacja od 3. semestru)</li>
-                        <li>Studia przerwane – skupienie na samodzielnej nauce Frontendu</li>
+                        <li data-i18n="education.ele">Elektrotechnika i Automatyka (3 semestry)</li>
+                        <li data-i18n="education.inf">Informatyka (1 semestr, kontynuacja od 3. semestru)</li>
+                        <li data-i18n="education.break">
+                           Studia przerwane – skupienie na samodzielnej nauce Frontendu
+                        </li>
                      </ul>
                   </div>
                   <div>
                      <h2>
-                        Zespół Szkół nr 3 w Sanoku
+                        <span data-i18n="education.hSchool">Zespół Szkół nr 3 w Sanoku</span>
                         <span>2017-2021</span>
                      </h2>
-                     <p>Technik Mechatronik | Kwalifikacje: E03, E18</p>
+                     <p data-i18n="education.mech">Technik Mechatronik | Kwalifikacje: E03, E18</p>
                   </div>
                </div>
                <div class="accordion">
                   <button class="accordion__tag" aria-expanded="false">
                      <i class="fa-solid fa-arrow-down"></i>
-                     Doświadczenie
+                     <span data-i18n="experience.tag">Doświadczenie</span>
                      <i class="fa-solid fa-arrow-down"></i>
                   </button>
                   <div class="accordion__content">
-                     <p>
+                     <p data-i18n="experience.accordion">
                         Pracę jako kurier rozpocząłem podczas studiów, ponieważ elastyczny grafik pozwalał mi skutecznie
                         łączyć naukę z pracą zarobkową. Z czasem doceniłem nie tylko elastyczność, ale też możliwość
                         osiągania dobrych zarobków bez potrzeby pracy na pełen etat. Dzięki temu mogę poświęcać więcej
@@ -163,27 +175,28 @@
                <div class="section-right__content">
                   <div>
                      <h2>
-                        Kurier - Platformy kurierskie
-                        <span>(2022 - obecnie)</span>
+                        <span data-i18n="experience.courier">Kurier - Platformy kurierskie</span>
+                        <span data-i18n="experience.courierTime">(2022 - obecnie)</span>
                      </h2>
                      <ul>
-                        <li>Efektywne zarządzanie czasem i trasami</li>
-                        <li>Komunikacja z klientem i rozwiązywanie problemów</li>
-                        <li>Adaptacja do zmiennych warunków pracy</li>
+                        <li data-i18n="experience.courier1">Efektywne zarządzanie czasem i trasami</li>
+                        <li data-i18n="experience.courier2">Komunikacja z klientem i rozwiązywanie problemów</li>
+                        <li data-i18n="experience.courier3">Adaptacja do zmiennych warunków pracy</li>
                      </ul>
                   </div>
                </div>
                <div class="accordion accordion__last">
                   <button class="accordion__tag accordion__tag--last" aria-expanded="false">
                      <i class="fa-solid fa-arrow-up"></i>
-                     Cele
+                     <span data-i18n="goals.tag">Cele</span>
                      <i class="fa-solid fa-arrow-up"></i>
                   </button>
                   <div class="accordion__content accordion__content--last">
-                     <p>
+                     <p data-i18n="goals.accordion1">
                         Wybrałem React ze względu na jego popularność i wszechstronność. TypeScript rozważam jako
                         kolejny krok, ale decyzja zależy od potrzeb rynku – jestem otwarty na zmiany.
-                        <br />
+                     </p>
+                     <p data-i18n="goals.accordion2">
                         Backend planuję jako etap uzupełniający, by w przyszłości rozwijać się jako Fullstack Developer.
                      </p>
                   </div>
@@ -201,6 +214,7 @@
          </main>
       </div>
       <script src="https://kit.fontawesome.com/d8727fd22c.js" crossorigin="anonymous"></script>
+      <script src="js/i18n.js"></script>
       <script src="js/main.js"></script>
    </body>
 </html>

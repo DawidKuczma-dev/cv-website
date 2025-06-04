@@ -1,0 +1,39 @@
+{
+   "portfolio": "Zobacz moje portfolio",
+   "qr.bar": "skan lub klik",
+
+   "aboutMe.h1": "O mnie",
+   "aboutMe.p": "Samodzielnie rozwijam się w kierunku frontendu, tworząc projekty z wykorzystaniem HTML, SASS i JavaScript. Lubię rozwiązywać problemy i przekładać pomysły na intuicyjne interfejsy użytkownika. Szukam pierwszej okazji, by dołączyć do zespołu IT i rozwijać się w środowisku komercyjnym.",
+
+   "language.title": "Języki",
+   "language.polish": "Polski (ojczysty)",
+   "language.english": "Angielski B2",
+
+   "skills.tag": "Umiejętności",
+   "skills.accordion": "Szczegółowe umiejętności najlepiej prezentuję w praktyce – zapraszam do zapoznania się z moim portfolio, gdzie można zobaczyć realne projekty i zastosowane technologie.",
+   "skills.rwd": "Responsywne projektowanie (RWD)",
+   "skills.ui": "Tworzenie komponentów UI",
+   "skills.seo": "Podstawy SEO",
+
+   "education.tag": "Edukacja",
+   "education.accordion1": "Podjąłem decyzję o przerwaniu studiów, aby skupić się na samodzielnym rozwoju w Frontend Developer z perspektywą full-stack. Intensywnie uczę się HTML5, CSS3 (w tym SASS), JavaScript (ES6+) oraz React.",
+   "education.accordion2": "Nauka odbywa się przez kursy online, praktyczne projekty i regularne ćwiczenia, a także budowanie portfolio. Dzięki temu zdobywam aktualne, praktyczne umiejętności dopasowane do rynku IT.",
+   "education.studies": "Politechnika Krakowska",
+   "education.ele": "Elektrotechnika i Automatyka (3 semestry)",
+   "education.inf": "Informatyka (1 semestr, kontynuacja od 3. semestru)",
+   "education.break": "Studia przerwane – skupienie na samodzielnej nauce Frontendu",
+   "education.hSchool": "Zespół Szkół nr 3 w Sanoku",
+   "education.mech": "Technik Mechatronik | Kwalifikacje: E03, E18",
+
+   "experience.tag": "Doświadczenie",
+   "experience.accordion": "Pracę jako kurier rozpocząłem podczas studiów, ponieważ elastyczny grafik pozwalał mi skutecznie łączyć naukę z pracą zarobkową. Z czasem doceniłem nie tylko elastyczność, ale też możliwość osiągania dobrych zarobków bez potrzeby pracy na pełen etat. Dzięki temu mogę poświęcać więcej czasu na rozwój umiejętności Frontendowych, realizację kursów i budowanie portfolio.",
+   "experience.courier": "Kurier - Platformy kurierskie",
+   "experience.courierTime": "(2022 - obecnie)",
+   "experience.courier1": "Efektywne zarządzanie czasem i trasami",
+   "experience.courier2": "Komunikacja z klientem i rozwiązywanie problemów",
+   "experience.courier3": "Adaptacja do zmiennych warunków pracy",
+
+   "goals.tag": "Cele",
+   "goals.accordion1": "Wybrałem React ze względu na jego popularność i wszechstronność. TypeScript rozważam jako kolejny krok, ale decyzja zależy od potrzeb rynku – jestem otwarty na zmiany.",
+   "goals.accordion2": "Backend planuję jako etap uzupełniający, by w przyszłości rozwijać się jako Fullstack Developer."
+}
