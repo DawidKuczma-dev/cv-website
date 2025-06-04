@@ -42,7 +42,12 @@ a {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
+  color: #000000;
   font-size: 16px;
+}
+body.darkmode {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .wrapper {
@@ -59,6 +64,67 @@ body {
   display: flex;
   justify-content: flex-end;
   height: calc(100vh - 155px);
+}
+
+.darkmode-toggle, .theme-toggle {
+  display: none;
+}
+.darkmode-toggle:checked + label, .theme-toggle:checked + label {
+  background: #242424;
+}
+.darkmode-toggle:checked + label::after, .theme-toggle:checked + label::after {
+  left: 490px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+.darkmode-toggle:checked + label .sun, .theme-toggle:checked + label .sun {
+  fill: #7e7e7e;
+}
+.darkmode-toggle:checked + label .moon, .theme-toggle:checked + label .moon {
+  fill: #fff;
+}
+
+.darkmode-label, .theme-label {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  display: block;
+  background-color: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.darkmode-label::after, .theme-label::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.darkmode-label:active::after, .theme-label:active::after {
+  width: 260px;
+}
+.darkmode-label svg, .theme-label svg {
+  position: absolute;
+  width: 120px;
+  top: 40px;
+  z-index: 1;
+}
+.darkmode-label .sun, .theme-label .sun {
+  left: 40px;
+  fill: #fff;
+  transition: 0.3s;
+}
+.darkmode-label .moon, .theme-label .moon {
+  left: 340px;
+  fill: #7e7e7e;
+  transition: 0.3s;
 }
 
 .header {
@@ -136,6 +202,37 @@ body {
 }
 .lang-switcher button.active {
   display: block;
+}
+
+.theme-toggle:checked + label {
+  background-color: black;
+}
+.theme-toggle:checked + label::after {
+  background: black;
+}
+
+.theme-label {
+  top: 35px;
+  right: 6px;
+  transform: scale(0.14) rotate(90deg) translateX(100%);
+  transform-origin: top right;
+  background-color: #ffffff;
+}
+.theme-label::after {
+  background: #043382;
+}
+
+.darkmode .header {
+  background-color: #043382;
+}
+.darkmode .header__image {
+  border: 5px solid #043382;
+}
+.darkmode .header__title {
+  color: #ffffff;
+}
+.darkmode .header__parallelogram {
+  background-color: #042b6b;
 }
 
 .section-left {
@@ -244,6 +341,30 @@ body {
 }
 .section-left__language li {
   padding-bottom: 5px;
+}
+
+.darkmode .section-left {
+  background-color: #191919;
+}
+.darkmode .section-left__qr-code button {
+  background-color: #4c7ed4;
+  color: #191919;
+}
+.darkmode .section-left__qr-code a div {
+  background-image: url("../assets/images/qrCode.png");
+}
+.darkmode .section-left__qr-code a div:hover {
+  background-image: url("../assets/images/qrCodeHover.png");
+}
+.darkmode .section-left__contact ul li i {
+  background-color: #4c7ed4;
+  color: #191919;
+}
+.darkmode .section-left__contact ul li a:hover {
+  color: #4c7ed4;
+}
+.darkmode .section-left__language button {
+  border: 2px solid #4c7ed4;
 }
 
 .section-right {
@@ -361,4 +482,19 @@ body {
 .accordion__tag[aria-expanded=true] + .accordion__content {
   transform: scaleY(1);
   width: 100%;
+}
+
+.darkmode .accordion__tag {
+  background-color: #043382;
+  color: #ffffff;
+}
+.darkmode .accordion__tag:hover {
+  background-color: #191919;
+}
+.darkmode .accordion__content {
+  background-color: hsla(0, 0%, 10%, 0.93);
+  color: #ffffff;
+}
+.darkmode .accordion__tag[aria-expanded=true] {
+  background-color: #191919;
 }/*# sourceMappingURL=main.css.map */

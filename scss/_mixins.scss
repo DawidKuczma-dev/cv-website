@@ -1,0 +1,5 @@
+@use 'variables' as *;
+
+@function theme-get($key, $theme: 'light') {
+   @return map-get(map-get($themes, $theme), $key);
+}

@@ -1,9 +1,15 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 body {
    font-family: $ff-primary;
-   background-color: $bg-color;
+   background-color: theme-get('bg-clr');
+   color: theme-get('font-clr');
    font-size: 16px;
+   &.darkmode {
+      background-color: theme-get('bg-clr', 'dark');
+      color: theme-get('font-clr', 'dark');
+   }
 }
 
 .wrapper {

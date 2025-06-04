@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'mixins' as *;
+@use 'darkmode-toggle';
 
 .header {
    font-family: $ff-header;
@@ -6,7 +8,7 @@
    overflow: visible;
    margin-top: 25px;
    height: 130px;
-   background-color: $primary-color;
+   background-color: theme-get('primary-clr');
    border-top: 1px solid #8ea3c6;
    border-bottom: 2px solid #19448c;
    &__image {
@@ -16,7 +18,7 @@
       z-index: 999;
       width: 180px;
       height: 180px;
-      border: 5px solid $primary-color;
+      border: 5px solid theme-get('primary-clr');
       border-radius: 50%;
       overflow: hidden;
       video {
@@ -30,7 +32,7 @@
       position: absolute;
       top: 33px;
       left: 265px;
-      color: $font-clr;
+      color: theme-get('header-font-clr');
       line-height: 0.9;
       h1 {
          text-transform: uppercase;
@@ -49,7 +51,7 @@
    }
    &__parallelogram {
       position: absolute;
-      background-color: $header-clr2;
+      background-color: theme-get('header-clr2');
       height: 130px;
       width: 305px;
       top: 65px;
@@ -71,6 +73,43 @@
       }
       &.active {
          display: block;
+      }
+   }
+}
+
+.theme-toggle {
+   @extend .darkmode-toggle;
+   &:checked + label {
+      background-color: black;
+   }
+   &:checked + label::after {
+      background: black;
+   }
+}
+
+.theme-label {
+   @extend .darkmode-label;
+   top: 35px;
+   right: 6px;
+   transform: scale(0.14) rotate(90deg) translateX(100%);
+   transform-origin: top right;
+   background-color: theme-get('bg-clr');
+   &::after {
+      background: theme-get('primary-clr');
+   }
+}
+
+.darkmode {
+   .header {
+      background-color: theme-get('primary-clr', 'dark');
+      &__image {
+         border: 5px solid theme-get('primary-clr', 'dark');
+      }
+      &__title {
+         color: theme-get('header-font-clr', 'dark');
+      }
+      &__parallelogram {
+         background-color: theme-get('header-clr2', 'dark');
       }
    }
 }

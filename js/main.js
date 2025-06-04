@@ -10,3 +10,8 @@ accordions.forEach((accordion) => {
       button.setAttribute('aria-expanded', 'false');
    });
 });
+
+// Toggle theme
+document.getElementById('theme-toggle').addEventListener('change', () => {
+   document.body.classList.toggle('darkmode');
+});

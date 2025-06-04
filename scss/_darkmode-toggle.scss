@@ -1,0 +1,60 @@
+.darkmode-toggle {
+   display: none;
+   &:checked + label {
+      background: #242424;
+   }
+   &:checked + label::after {
+      left: 490px;
+      transform: translateX(-100%);
+      background: linear-gradient(180deg, #777, #3a3a3a);
+   }
+   &:checked + label .sun {
+      fill: #7e7e7e;
+   }
+   &:checked + label .moon {
+      fill: #fff;
+   }
+}
+
+.darkmode-label {
+   width: 500px;
+   height: 200px;
+   position: absolute;
+   display: block;
+   background-color: #ebebeb;
+   border-radius: 200px;
+   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+   cursor: pointer;
+   transition: 0.3s;
+   &::after {
+      content: '';
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: linear-gradient(180deg, #ffcc89, #d8860b);
+      border-radius: 180px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+   }
+   &:active::after {
+      width: 260px;
+   }
+   svg {
+      position: absolute;
+      width: 120px;
+      top: 40px;
+      z-index: 1;
+   }
+   .sun {
+      left: 40px;
+      fill: #fff;
+      transition: 0.3s;
+   }
+   .moon {
+      left: 340px;
+      fill: #7e7e7e;
+      transition: 0.3s;
+   }
+}
