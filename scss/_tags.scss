@@ -75,20 +75,20 @@
 .darkmode {
    .accordion {
       &__tag {
-         background-color: theme-get('primary-clr', 'dark');
+         background-color: theme-get('btn-clr', 'dark');
          color: theme-get('bg-clr', 'dark');
          &:hover {
-            background-color: theme-get('sectionL-clr', 'dark');
+            background-color: theme-get('font-clr', 'dark');
          }
       }
       &__content {
          background-color: theme-get('accordion-bg', 'dark');
-         color: theme-get('bg-clr', 'dark');
+         color: theme-get('sectionL-clr', 'dark');
       }
    }
    .accordion__tag {
       &[aria-expanded='true'] {
-         background-color: theme-get('sectionL-clr', 'dark');
+         background-color: theme-get('sectionL-font-clr', 'dark');
       }
    }
 }

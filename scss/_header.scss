@@ -9,8 +9,6 @@
    margin-top: 25px;
    height: 130px;
    background-color: theme-get('primary-clr');
-   border-top: 1px solid #8ea3c6;
-   border-bottom: 2px solid #19448c;
    &__image {
       position: absolute;
       top: -9px;
@@ -80,10 +78,10 @@
 .theme-toggle {
    @extend .darkmode-toggle;
    &:checked + label {
-      background-color: black;
+      background-color: theme-get('bg-clr', 'dark');
    }
    &:checked + label::after {
-      background: black;
+      background: theme-get('sectionL-clr', 'dark');
    }
 }
 
@@ -97,19 +95,22 @@
    &::after {
       background: theme-get('primary-clr');
    }
-}
-
-.darkmode {
-   .header {
-      background-color: theme-get('primary-clr', 'dark');
-      &__image {
-         border: 5px solid theme-get('primary-clr', 'dark');
-      }
-      &__title {
-         color: theme-get('header-font-clr', 'dark');
-      }
-      &__parallelogram {
-         background-color: theme-get('header-clr2', 'dark');
-      }
+   .moon {
+      transform: rotate(-90deg);
    }
 }
+
+// .darkmode {
+//    .header {
+//       background-color: theme-get('primary-clr', 'dark');
+//       &__image {
+//          border: 5px solid theme-get('primary-clr', 'dark');
+//       }
+//       &__title {
+//          color: theme-get('header-font-clr', 'dark');
+//       }
+//       &__parallelogram {
+//          background-color: theme-get('header-clr2', 'dark');
+//       }
+//    }
+// }

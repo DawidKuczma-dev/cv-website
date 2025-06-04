@@ -27,3 +27,9 @@ body {
    justify-content: flex-end;
    height: calc(100vh - 155px);
 }
+
+.darkmode {
+   .wrapper {
+      box-shadow: 0px 0px 100px -10px rgb(48, 48, 48);
+   }
+}

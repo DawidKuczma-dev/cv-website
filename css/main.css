@@ -46,8 +46,8 @@ body {
   font-size: 16px;
 }
 body.darkmode {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #191919;
+  color: #dddddd;
 }
 
 .wrapper {
@@ -64,6 +64,10 @@ body.darkmode {
   display: flex;
   justify-content: flex-end;
   height: calc(100vh - 155px);
+}
+
+.darkmode .wrapper {
+  box-shadow: 0px 0px 100px -10px rgb(48, 48, 48);
 }
 
 .darkmode-toggle, .theme-toggle {
@@ -134,8 +138,6 @@ body.darkmode {
   margin-top: 25px;
   height: 130px;
   background-color: #043382;
-  border-top: 1px solid #8ea3c6;
-  border-bottom: 2px solid #19448c;
 }
 .header__image {
   position: absolute;
@@ -205,10 +207,10 @@ body.darkmode {
 }
 
 .theme-toggle:checked + label {
-  background-color: black;
+  background-color: #191919;
 }
 .theme-toggle:checked + label::after {
-  background: black;
+  background: #000000;
 }
 
 .theme-label {
@@ -221,18 +223,8 @@ body.darkmode {
 .theme-label::after {
   background: #043382;
 }
-
-.darkmode .header {
-  background-color: #043382;
-}
-.darkmode .header__image {
-  border: 5px solid #043382;
-}
-.darkmode .header__title {
-  color: #ffffff;
-}
-.darkmode .header__parallelogram {
-  background-color: #042b6b;
+.theme-label .moon {
+  transform: rotate(-90deg);
 }
 
 .section-left {
@@ -240,7 +232,6 @@ body.darkmode {
   background-color: #191919;
   width: 250px;
   color: #ffffff;
-  border-left: 1px solid #efefef;
   text-align: center;
 }
 .section-left__title {
@@ -344,32 +335,33 @@ body.darkmode {
 }
 
 .darkmode .section-left {
-  background-color: #191919;
+  background-color: #000000;
+  color: #eeeeee;
 }
 .darkmode .section-left__qr-code button {
-  background-color: #4c7ed4;
-  color: #191919;
+  background-color: #00b4d8;
+  color: #000000;
 }
 .darkmode .section-left__qr-code a div {
-  background-image: url("../assets/images/qrCode.png");
+  background-image: url("../assets/images/qrCodeDarkMode.png");
 }
 .darkmode .section-left__qr-code a div:hover {
   background-image: url("../assets/images/qrCodeHover.png");
 }
 .darkmode .section-left__contact ul li i {
-  background-color: #4c7ed4;
-  color: #191919;
+  background-color: #00b4d8;
+  color: #000000;
 }
 .darkmode .section-left__contact ul li a:hover {
-  color: #4c7ed4;
+  color: #00b4d8;
 }
 .darkmode .section-left__language button {
-  border: 2px solid #4c7ed4;
+  border: 2px solid #00b4d8;
 }
 
 .section-right {
   width: 375px;
-  box-shadow: inset 0px 72px 59px -77px rgb(0, 0, 0), inset 1px 0 0 0 #b9b9b9;
+  box-shadow: inset 0px 72px 59px -77px rgb(0, 0, 0);
   padding: 15px 30px;
   font-size: 0.9rem;
 }
@@ -413,6 +405,10 @@ body.darkmode {
   justify-content: space-between;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.darkmode .section-right {
+  box-shadow: inset 0px 72px 59px -77px rgb(70, 70, 70);
 }
 
 .accordion {
@@ -485,16 +481,16 @@ body.darkmode {
 }
 
 .darkmode .accordion__tag {
-  background-color: #043382;
-  color: #ffffff;
+  background-color: #00b4d8;
+  color: #191919;
 }
 .darkmode .accordion__tag:hover {
-  background-color: #191919;
+  background-color: #dddddd;
 }
 .darkmode .accordion__content {
-  background-color: hsla(0, 0%, 10%, 0.93);
-  color: #ffffff;
+  background-color: hsla(0, 0%, 90%, 0.93);
+  color: #000000;
 }
 .darkmode .accordion__tag[aria-expanded=true] {
-  background-color: #191919;
+  background-color: #eeeeee;
 }/*# sourceMappingURL=main.css.map */
