@@ -82,7 +82,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
-.header__image img {
+.header__image video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
