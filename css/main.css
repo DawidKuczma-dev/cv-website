@@ -352,7 +352,7 @@ body.darkmode {
   background-image: url("../assets/images/qrCodeDarkMode.png");
 }
 .darkmode .section-left__qr-code a div:hover {
-  background-image: url("../assets/images/qrCodeHover.png");
+  background-image: url("../assets/images/qrCodeDarkModeHover.png");
 }
 .darkmode .section-left__contact ul li i {
   background-color: #00b4d8;

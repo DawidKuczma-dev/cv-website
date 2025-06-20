@@ -2,154 +2,154 @@
 @use 'mixins' as *;
 
 .section-left {
-   padding: 75px 20px 0;
-   background-color: theme-get('sectionL-clr');
-   width: 250px;
-   color: theme-get('sectionL-font-clr');
-   text-align: center;
+  padding: 75px 20px 0;
+  background-color: theme-get('sectionL-clr');
+  width: 250px;
+  color: theme-get('sectionL-font-clr');
+  text-align: center;
 
-   &__title {
+  &__title {
+    font-family: $ff-portfolio;
+    padding: 0 26px;
+    font-size: 2.2rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    min-height: 105px;
+  }
+  &__qr-code {
+    button {
+      background-color: theme-get('btn-clr');
+      color: theme-get('sectionL-clr');
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
       font-family: $ff-portfolio;
-      padding: 0 26px;
-      font-size: 2.2rem;
-      line-height: 1;
-      margin-bottom: 15px;
-      min-height: 105px;
-   }
-   &__qr-code {
-      button {
-         background-color: theme-get('btn-clr');
-         color: theme-get('sectionL-clr');
-         font-weight: 700;
-         font-size: 0.8rem;
-         text-transform: uppercase;
-         font-family: $ff-portfolio;
-         padding: 5px 10px;
-         border-radius: 14px;
-         transition: 0.2s linear;
-         i.left {
-            padding-right: 2px;
-         }
-         i.right {
-            padding-left: 2px;
-         }
+      padding: 5px 10px;
+      border-radius: 14px;
+      transition: 0.2s linear;
+      i.left {
+        padding-right: 2px;
       }
-      a {
-         display: block;
-         width: 70%;
-         margin: 0 auto;
-         div {
-            cursor: pointer;
-            margin: 0 auto;
-            background-image: url('../assets/images/qrCode.png');
-            background-size: cover;
-            width: 100%;
-            aspect-ratio: 1;
-            transition: 0.2s linear;
-            &:hover {
-               background-image: url('../assets/images/qrCodeHover.png');
-            }
-         }
+      i.right {
+        padding-left: 2px;
       }
-   }
-   &__about-me {
-      margin-bottom: 15px;
-      h1 {
-         font-weight: 400;
-         padding-bottom: 5px;
-         font-size: 1.2rem;
+    }
+    a {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      div {
+        cursor: pointer;
+        margin: 0 auto;
+        background-image: url('../assets/images/qrCode.png');
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 1;
+        transition: 0.2s linear;
+        &:hover {
+          background-image: url('../assets/images/qrCodeHover.png');
+        }
       }
-      p {
-         font-size: 0.8rem;
-         min-height: 165px;
-      }
-   }
-   &__contact {
-      ul {
-         list-style-type: none;
-         padding-left: 0;
-         text-align: left;
-         li {
-            font-size: 0.8rem;
-            margin-bottom: 12px;
-            i {
-               background-color: theme-get('btn-clr');
-               color: theme-get('sectionL-clr');
-               padding: 5px;
-               border-radius: 50%;
-               margin-right: 8px;
-            }
-            &:last-child {
-               i {
-                  padding: 5px 6.6px;
-               }
-            }
-            a {
-               cursor: pointer;
-               &.small {
-                  font-size: 0.65rem;
-               }
-               &:hover {
-                  font-weight: 700;
-                  color: theme-get('btn-clr');
-               }
-            }
-         }
-      }
-   }
-   &__language {
+    }
+  }
+  &__about-me {
+    margin-bottom: 15px;
+    h1 {
+      font-weight: 400;
+      padding-bottom: 5px;
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0.8rem;
+      min-height: 165px;
+    }
+  }
+  &__contact {
+    ul {
+      list-style-type: none;
+      padding-left: 0;
       text-align: left;
-      margin-top: 10px;
-      font-size: 0.9rem;
-      button {
-         text-align: center;
-         border: 2px solid theme-get('btn-clr');
-         width: 100%;
-         padding: 4px 0;
-         border-radius: 18px;
-         margin-bottom: 10px;
-      }
       li {
-         padding-bottom: 5px;
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+        i {
+          background-color: theme-get('btn-clr');
+          color: theme-get('sectionL-clr');
+          padding: 5px;
+          border-radius: 50%;
+          margin-right: 8px;
+        }
+        &:last-child {
+          i {
+            padding: 5px 6.6px;
+          }
+        }
+        a {
+          cursor: pointer;
+          &.small {
+            font-size: 0.65rem;
+          }
+          &:hover {
+            font-weight: 700;
+            color: theme-get('btn-clr');
+          }
+        }
       }
-   }
+    }
+  }
+  &__language {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    button {
+      text-align: center;
+      border: 2px solid theme-get('btn-clr');
+      width: 100%;
+      padding: 4px 0;
+      border-radius: 18px;
+      margin-bottom: 10px;
+    }
+    li {
+      padding-bottom: 5px;
+    }
+  }
 }
 
 .darkmode {
-   .section-left {
-      background-color: theme-get('sectionL-clr', 'dark');
-      color: theme-get('sectionL-font-clr', 'dark');
-      &__qr-code {
-         button {
+  .section-left {
+    background-color: theme-get('sectionL-clr', 'dark');
+    color: theme-get('sectionL-font-clr', 'dark');
+    &__qr-code {
+      button {
+        background-color: theme-get('btn-clr', 'dark');
+        color: theme-get('sectionL-clr', 'dark');
+      }
+      a div {
+        background-image: url('../assets/images/qrCodeDarkMode.png');
+        &:hover {
+          background-image: url('../assets/images/qrCodeDarkModeHover.png');
+        }
+      }
+    }
+    &__contact {
+      ul {
+        li {
+          i {
             background-color: theme-get('btn-clr', 'dark');
             color: theme-get('sectionL-clr', 'dark');
-         }
-         a div {
-            background-image: url('../assets/images/qrCodeDarkMode.png');
+          }
+          a {
             &:hover {
-               background-image: url('../assets/images/qrCodeHover.png');
+              color: theme-get('btn-clr', 'dark');
             }
-         }
+          }
+        }
       }
-      &__contact {
-         ul {
-            li {
-               i {
-                  background-color: theme-get('btn-clr', 'dark');
-                  color: theme-get('sectionL-clr', 'dark');
-               }
-               a {
-                  &:hover {
-                     color: theme-get('btn-clr', 'dark');
-                  }
-               }
-            }
-         }
+    }
+    &__language {
+      button {
+        border: 2px solid theme-get('btn-clr', 'dark');
       }
-      &__language {
-         button {
-            border: 2px solid theme-get('btn-clr', 'dark');
-         }
-      }
-   }
+    }
+  }
 }
