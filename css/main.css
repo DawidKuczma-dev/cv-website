@@ -408,7 +408,7 @@ body.darkmode {
 }
 .section-right__content--goals div ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 1rem;
   font-weight: 700;
 }

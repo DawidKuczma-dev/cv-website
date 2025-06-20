@@ -1,234 +1,250 @@
 <!DOCTYPE html>
 <html lang="pl">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Dawid Kuczma - Frontend Developer | CV</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Montserrat:wght@100..900&family=Poppins:wght@400;700&display=swap"
-         rel="stylesheet"
-      />
-      <link rel="stylesheet" href="css/main.css" />
-   </head>
-   <body>
-      <div class="wrapper">
-         <header class="header">
-            <div class="lang-switcher">
-               <button data-lang="en" class="active">
-                  <img src="assets/images/gb.svg" alt="English" />
-               </button>
-               <button data-lang="pl">
-                  <img src="assets/images/pl.svg" alt="Polish" />
-               </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dawid Kuczma - Frontend Developer | CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Montserrat:wght@100..900&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="lang-switcher">
+          <button data-lang="en" class="active">
+            <img src="assets/images/gb.svg" alt="English" />
+          </button>
+          <button data-lang="pl">
+            <img src="assets/images/pl.svg" alt="Polish" />
+          </button>
+        </div>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle" />
+        <label for="theme-toggle" class="theme-label">
+          <svg class="sun" viewBox="0 0 24 24">
+            <path
+              d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM12 7.75C9.65279 7.75 7.75 9.65279 7.75 12C7.75 14.3472 9.65279 16.25 12 16.25C14.3472 16.25 16.25 14.3472 16.25 12C16.25 9.65279 14.3472 7.75 12 7.75ZM6.25 12C6.25 8.82436 8.82436 6.25 12 6.25C15.1756 6.25 17.75 8.82436 17.75 12C17.75 15.1756 15.1756 17.75 12 17.75C8.82436 17.75 6.25 15.1756 6.25 12ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
+            />
+          </svg>
+          <svg class="moon" viewBox="0 0 32 32">
+            <path
+              d="M29.223 24.178l-0.021-0.057c-0.116-0.274-0.383-0.463-0.694-0.463-0.104 0-0.202 0.021-0.292 0.059l0.005-0.002c-1.272 0.542-2.752 0.857-4.306 0.857-6.213 0-11.25-5.037-11.25-11.25 0-4.66 2.833-8.658 6.871-10.366l0.074-0.028 0.211-0.089c0.267-0.118 0.45-0.381 0.45-0.687 0-0.375-0.276-0.686-0.635-0.74l-0.004-0.001c-0.653-0.103-1.407-0.161-2.174-0.161-8.145 0-14.748 6.603-14.748 14.748s6.603 14.748 14.748 14.748c4.748 0 8.973-2.244 11.67-5.73l0.025-0.034c0.097-0.125 0.155-0.285 0.155-0.458 0-0.127-0.031-0.246-0.086-0.351l0.002 0.004zM22.518 28.24c-1.497 0.637-3.238 1.007-5.066 1.007-7.317 0-13.249-5.932-13.249-13.249 0-7.074 5.543-12.853 12.523-13.23l0.034-0.001c-3.395 2.326-5.594 6.183-5.594 10.554 0 7.043 5.709 12.752 12.752 12.752 0.85 0 1.681-0.083 2.485-0.242l-0.081 0.013c-1.081 0.976-2.339 1.783-3.716 2.364l-0.087 0.033z"
+            ></path>
+          </svg>
+        </label>
+        <div class="header__image">
+          <video
+            id="profileVideo"
+            autoplay
+            muted
+            playsinline
+            onended="this.pause();"
+            poster="assets/images/poster.jpg"
+            src="assets/images/prof.mp4"
+          >
+            Twoja przeglądarka nie obsługuje wideo.
+          </video>
+        </div>
+        <div class="header__title">
+          <h1>
+            Dawid
+            <span>Kuczma</span>
+          </h1>
+          <h2>frontend developer</h2>
+        </div>
+        <div class="header__parallelogram"></div>
+      </header>
+      <main class="sections">
+        <section class="section-left">
+          <h1 class="section-left__title" data-i18n="portfolio">Zobacz moje portfolio</h1>
+          <div class="section-left__qr-code">
+            <button>
+              <i class="fa-solid fa-arrow-down left"></i>
+              <span data-i18n="qr.bar">skan lub klik</span>
+              <i class="fa-solid fa-arrow-down right"></i>
+            </button>
+            <a href="https://dawidkuczma-dev.github.io/" target="_blank" rel="noopener noreferrer"
+              ><div></div
+            ></a>
+          </div>
+          <div class="section-left__about-me">
+            <h1 data-i18n="aboutMe.h1">O mnie</h1>
+            <p data-i18n="aboutMe.p">
+              Samodzielnie rozwijam się w kierunku frontendu, tworząc projekty z wykorzystaniem
+              HTML, SASS, JavaScript i React. Lubię rozwiązywać problemy i przekładać pomysły na
+              nowoczesne, estetyczne i responsywne strony internetowe. Szukam pierwszej okazji, by
+              dołączyć do zespołu IT i rozwijać się w środowisku komercyjnym.
+            </p>
+          </div>
+          <div class="section-left__contact">
+            <ul>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:dawidkuczma.dev@gmail.com" class="small"
+                  >dawidkuczma.dev@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <a
+                  href="https://github.com/DawidKuczma-dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Kraków
+              </li>
+            </ul>
+          </div>
+          <div class="section-left__language">
+            <button data-i18n="language.title">Języki</button>
+            <ul>
+              <li data-i18n="language.polish">Polski (ojczysty)</li>
+              <li data-i18n="language.english">Angielski B2</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-right">
+          <div class="accordion">
+            <button class="accordion__tag" aria-expanded="false">
+              <i class="fa-solid fa-arrow-down"></i>
+              <span data-i18n="skills.tag">Umiejętności</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </button>
+            <div class="accordion__content">
+              <p data-i18n="skills.accordion">
+                Szczegółowe umiejętności najlepiej prezentuję w praktyce – zapraszam do zapoznania
+                się z moim portfolio, gdzie można zobaczyć realne projekty i zastosowane
+                technologie.
+              </p>
             </div>
-            <input type="checkbox" id="theme-toggle" class="theme-toggle" />
-            <label for="theme-toggle" class="theme-label">
-               <svg class="sun" viewBox="0 0 24 24">
-                  <path
-                     d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM12 7.75C9.65279 7.75 7.75 9.65279 7.75 12C7.75 14.3472 9.65279 16.25 12 16.25C14.3472 16.25 16.25 14.3472 16.25 12C16.25 9.65279 14.3472 7.75 12 7.75ZM6.25 12C6.25 8.82436 8.82436 6.25 12 6.25C15.1756 6.25 17.75 8.82436 17.75 12C17.75 15.1756 15.1756 17.75 12 17.75C8.82436 17.75 6.25 15.1756 6.25 12ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
-                  />
-               </svg>
-               <svg class="moon" viewBox="0 0 32 32">
-                  <path
-                     d="M29.223 24.178l-0.021-0.057c-0.116-0.274-0.383-0.463-0.694-0.463-0.104 0-0.202 0.021-0.292 0.059l0.005-0.002c-1.272 0.542-2.752 0.857-4.306 0.857-6.213 0-11.25-5.037-11.25-11.25 0-4.66 2.833-8.658 6.871-10.366l0.074-0.028 0.211-0.089c0.267-0.118 0.45-0.381 0.45-0.687 0-0.375-0.276-0.686-0.635-0.74l-0.004-0.001c-0.653-0.103-1.407-0.161-2.174-0.161-8.145 0-14.748 6.603-14.748 14.748s6.603 14.748 14.748 14.748c4.748 0 8.973-2.244 11.67-5.73l0.025-0.034c0.097-0.125 0.155-0.285 0.155-0.458 0-0.127-0.031-0.246-0.086-0.351l0.002 0.004zM22.518 28.24c-1.497 0.637-3.238 1.007-5.066 1.007-7.317 0-13.249-5.932-13.249-13.249 0-7.074 5.543-12.853 12.523-13.23l0.034-0.001c-3.395 2.326-5.594 6.183-5.594 10.554 0 7.043 5.709 12.752 12.752 12.752 0.85 0 1.681-0.083 2.485-0.242l-0.081 0.013c-1.081 0.976-2.339 1.783-3.716 2.364l-0.087 0.033z"
-                  ></path>
-               </svg>
-            </label>
-            <div class="header__image">
-               <video
-                  id="profileVideo"
-                  autoplay
-                  muted
-                  playsinline
-                  onended="this.pause();"
-                  poster="assets/images/poster.jpg"
-                  src="assets/images/prof.mp4"
-               >
-                  Twoja przeglądarka nie obsługuje wideo.
-               </video>
+          </div>
+          <div class="section-right__content section-right__content--skills">
+            <div>
+              <ul>
+                <li>HTML5, CSS3, SASS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Git, GitHub</li>
+                <li data-i18n="skills.rwd">Responsywne projektowanie (RWD)</li>
+                <li data-i18n="skills.ui">Tworzenie komponentów UI</li>
+              </ul>
             </div>
-            <div class="header__title">
-               <h1>
-                  Dawid
-                  <span>Kuczma</span>
-               </h1>
-               <h2>frontend developer</h2>
+          </div>
+          <div class="accordion">
+            <button class="accordion__tag" aria-expanded="false">
+              <i class="fa-solid fa-arrow-down"></i>
+              <span data-i18n="education.tag">Edukacja</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </button>
+            <div class="accordion__content">
+              <p data-i18n="education.accordion1">
+                Podjąłem decyzję o przerwaniu studiów, aby skupić się na samodzielnym rozwoju w
+                Frontend Developer z perspektywą full-stack. Intensywnie uczę się HTML5, CSS3 (w tym
+                SASS), JavaScript (ES6+) oraz React.
+              </p>
+              <p data-i18n="education.accordion2">
+                Nauka odbywa się przez kursy online, praktyczne projekty i regularne ćwiczenia, a
+                także budowanie portfolio. Dzięki temu zdobywam aktualne, praktyczne umiejętności
+                dopasowane do rynku IT.
+              </p>
             </div>
-            <div class="header__parallelogram"></div>
-         </header>
-         <main class="sections">
-            <section class="section-left">
-               <h1 class="section-left__title" data-i18n="portfolio">Zobacz moje portfolio</h1>
-               <div class="section-left__qr-code">
-                  <button>
-                     <i class="fa-solid fa-arrow-down left"></i>
-                     <span data-i18n="qr.bar">skan lub klik</span>
-                     <i class="fa-solid fa-arrow-down right"></i>
-                  </button>
-                  <a href="https://dawidkuczma-dev.github.io/" target="_blank" rel="noopener noreferrer"><div></div></a>
-               </div>
-               <div class="section-left__about-me">
-                  <h1 data-i18n="aboutMe.h1">O mnie</h1>
-                  <p data-i18n="aboutMe.p">
-                     Samodzielnie rozwijam się w kierunku frontendu, tworząc projekty z wykorzystaniem HTML, SASS i
-                     JavaScript. Lubię rozwiązywać problemy i przekładać pomysły na intuicyjne interfejsy użytkownika.
-                     Szukam pierwszej okazji, by dołączyć do zespołu IT i rozwijać się w środowisku komercyjnym.
-                  </p>
-               </div>
-               <div class="section-left__contact">
-                  <ul>
-                     <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:dawidkuczma.dev@gmail.com" class="small">dawidkuczma.dev@gmail.com</a>
-                     </li>
-                     <li>
-                        <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/DawidKuczma-dev" target="_blank" rel="noopener noreferrer">
-                           GitHub
-                        </a>
-                     </li>
-                     <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Kraków
-                     </li>
-                  </ul>
-               </div>
-               <div class="section-left__language">
-                  <button data-i18n="language.title">Języki</button>
-                  <ul>
-                     <li data-i18n="language.polish">Polski (ojczysty)</li>
-                     <li data-i18n="language.english">Angielski B2</li>
-                  </ul>
-               </div>
-            </section>
-            <section class="section-right">
-               <div class="accordion">
-                  <button class="accordion__tag" aria-expanded="false">
-                     <i class="fa-solid fa-arrow-down"></i>
-                     <span data-i18n="skills.tag">Umiejętności</span>
-                     <i class="fa-solid fa-arrow-down"></i>
-                  </button>
-                  <div class="accordion__content">
-                     <p data-i18n="skills.accordion">
-                        Szczegółowe umiejętności najlepiej prezentuję w praktyce – zapraszam do zapoznania się z moim
-                        portfolio, gdzie można zobaczyć realne projekty i zastosowane technologie.
-                     </p>
-                  </div>
-               </div>
-               <div class="section-right__content section-right__content--skills">
-                  <div>
-                     <ul>
-                        <li>HTML5, CSS3, SASS</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Git, GitHub</li>
-                        <li data-i18n="skills.rwd">Responsywne projektowanie (RWD)</li>
-                        <li data-i18n="skills.ui">Tworzenie komponentów UI</li>
-                        <li data-i18n="skills.seo">Podstawy SEO</li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="accordion">
-                  <button class="accordion__tag" aria-expanded="false">
-                     <i class="fa-solid fa-arrow-down"></i>
-                     <span data-i18n="education.tag">Edukacja</span>
-                     <i class="fa-solid fa-arrow-down"></i>
-                  </button>
-                  <div class="accordion__content">
-                     <p data-i18n="education.accordion1">
-                        Podjąłem decyzję o przerwaniu studiów, aby skupić się na samodzielnym rozwoju w Frontend
-                        Developer z perspektywą full-stack. Intensywnie uczę się HTML5, CSS3 (w tym SASS), JavaScript
-                        (ES6+) oraz React.
-                     </p>
-                     <p data-i18n="education.accordion2">
-                        Nauka odbywa się przez kursy online, praktyczne projekty i regularne ćwiczenia, a także
-                        budowanie portfolio. Dzięki temu zdobywam aktualne, praktyczne umiejętności dopasowane do rynku
-                        IT.
-                     </p>
-                  </div>
-               </div>
-               <div class="section-right__content section-right__content--education">
-                  <div>
-                     <h2>
-                        <span data-i18n="education.studies">Politechnika Krakowska</span>
-                        <span>2021-2024</span>
-                     </h2>
-                     <ul>
-                        <li data-i18n="education.ele">Elektrotechnika i Automatyka (3 semestry)</li>
-                        <li data-i18n="education.inf">Informatyka (1 semestr, kontynuacja od 3. semestru)</li>
-                        <li data-i18n="education.break">
-                           Studia przerwane – skupienie na samodzielnej nauce Frontendu
-                        </li>
-                     </ul>
-                  </div>
-                  <div>
-                     <h2>
-                        <span data-i18n="education.hSchool">Zespół Szkół nr 3 w Sanoku</span>
-                        <span>2017-2021</span>
-                     </h2>
-                     <p data-i18n="education.mech">Technik Mechatronik | Kwalifikacje: E03, E18</p>
-                  </div>
-               </div>
-               <div class="accordion">
-                  <button class="accordion__tag" aria-expanded="false">
-                     <i class="fa-solid fa-arrow-down"></i>
-                     <span data-i18n="experience.tag">Doświadczenie</span>
-                     <i class="fa-solid fa-arrow-down"></i>
-                  </button>
-                  <div class="accordion__content">
-                     <p data-i18n="experience.accordion">
-                        Pracę jako kurier rozpocząłem podczas studiów, ponieważ elastyczny grafik pozwalał mi skutecznie
-                        łączyć naukę z pracą zarobkową. Z czasem doceniłem nie tylko elastyczność, ale też możliwość
-                        osiągania dobrych zarobków bez potrzeby pracy na pełen etat. Dzięki temu mogę poświęcać więcej
-                        czasu na rozwój umiejętności Frontendowych, realizację kursów i budowanie portfolio.
-                     </p>
-                  </div>
-               </div>
-               <div class="section-right__content">
-                  <div>
-                     <h2>
-                        <span data-i18n="experience.courier">Kurier - Platformy kurierskie</span>
-                        <span data-i18n="experience.courierTime">(2022 - obecnie)</span>
-                     </h2>
-                     <ul>
-                        <li data-i18n="experience.courier1">Efektywne zarządzanie czasem i trasami</li>
-                        <li data-i18n="experience.courier2">Komunikacja z klientem i rozwiązywanie problemów</li>
-                        <li data-i18n="experience.courier3">Adaptacja do zmiennych warunków pracy</li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="accordion accordion__last">
-                  <button class="accordion__tag accordion__tag--last" aria-expanded="false">
-                     <i class="fa-solid fa-arrow-up"></i>
-                     <span data-i18n="goals.tag">Cele</span>
-                     <i class="fa-solid fa-arrow-up"></i>
-                  </button>
-                  <div class="accordion__content accordion__content--last">
-                     <p data-i18n="goals.accordion1">
-                        Wybrałem React ze względu na jego popularność i wszechstronność. TypeScript rozważam jako
-                        kolejny krok, ale decyzja zależy od potrzeb rynku – jestem otwarty na zmiany.
-                     </p>
-                     <p data-i18n="goals.accordion2">
-                        Backend planuję jako etap uzupełniający, by w przyszłości rozwijać się jako Fullstack Developer.
-                     </p>
-                  </div>
-               </div>
-               <div class="section-right__content section-right__content--goals">
-                  <div>
-                     <ul>
-                        <li>React</li>
-                        <li>TypeScript</li>
-                        <li>Backend</li>
-                     </ul>
-                  </div>
-               </div>
-            </section>
-         </main>
-      </div>
-      <script src="https://kit.fontawesome.com/d8727fd22c.js" crossorigin="anonymous"></script>
-      <script src="js/video.js"></script>
-      <script src="js/i18n.js"></script>
-      <script src="js/main.js"></script>
-   </body>
+          </div>
+          <div class="section-right__content section-right__content--education">
+            <div>
+              <h2>
+                <span data-i18n="education.studies">Politechnika Krakowska</span>
+                <span>2021-2024</span>
+              </h2>
+              <ul>
+                <li data-i18n="education.ele">Elektrotechnika i Automatyka (3 semestry)</li>
+                <li data-i18n="education.inf">
+                  Informatyka (1 semestr, kontynuacja od 3. semestru)
+                </li>
+                <li data-i18n="education.break">
+                  Studia przerwane – skupienie na samodzielnej nauce Frontendu
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>
+                <span data-i18n="education.hSchool">Zespół Szkół nr 3 w Sanoku</span>
+                <span>2017-2021</span>
+              </h2>
+              <p data-i18n="education.mech">Technik Mechatronik | Kwalifikacje: E03, E18</p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button class="accordion__tag" aria-expanded="false">
+              <i class="fa-solid fa-arrow-down"></i>
+              <span data-i18n="experience.tag">Doświadczenie</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </button>
+            <div class="accordion__content">
+              <p data-i18n="experience.accordion">
+                Pracę jako kurier rozpocząłem podczas studiów, ponieważ elastyczny grafik pozwalał
+                mi skutecznie łączyć naukę z pracą zarobkową. Z czasem doceniłem nie tylko
+                elastyczność, ale też możliwość osiągania dobrych zarobków bez potrzeby pracy na
+                pełen etat. Dzięki temu mogę poświęcać więcej czasu na rozwój umiejętności
+                Frontendowych, realizację kursów i budowanie portfolio.
+              </p>
+            </div>
+          </div>
+          <div class="section-right__content">
+            <div>
+              <h2>
+                <span data-i18n="experience.courier">Kurier - Platformy kurierskie</span>
+                <span data-i18n="experience.courierTime">(2022 - obecnie)</span>
+              </h2>
+              <ul>
+                <li data-i18n="experience.courier1">Efektywne zarządzanie czasem i trasami</li>
+                <li data-i18n="experience.courier2">
+                  Komunikacja z klientem i rozwiązywanie problemów
+                </li>
+                <li data-i18n="experience.courier3">Adaptacja do zmiennych warunków pracy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion accordion__last">
+            <button class="accordion__tag accordion__tag--last" aria-expanded="false">
+              <i class="fa-solid fa-arrow-up"></i>
+              <span data-i18n="goals.tag">Cele</span>
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
+            <div class="accordion__content accordion__content--last">
+              <p data-i18n="goals.accordion1">
+                TypeScript traktuję jako naturalne rozszerzenie JavaScriptu, które pomaga tworzyć
+                bardziej przewidywalny i skalowalny kod. Planuję jego naukę, aby lepiej przygotować
+                się do pracy zespołowej przy większych projektach.
+              </p>
+              <p data-i18n="goals.accordion2">
+                Backend planuję jako kolejny krok, by w przyszłości rozwijać się jako Fullstack
+                Developer.
+              </p>
+            </div>
+          </div>
+          <div class="section-right__content section-right__content--goals">
+            <div>
+              <ul>
+                <li>TypeScript</li>
+                <li>Backend</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://kit.fontawesome.com/d8727fd22c.js" crossorigin="anonymous"></script>
+    <script src="js/video.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
