@@ -10,8 +10,8 @@ Nowoczesne, interaktywne CV stworzone w HTML, SCSS i JavaScript, które prezentu
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="assets/images/screenshot-light.png" width="800" alt="Mobile" />
-  <img src="assets/images/screenshot-dark.png" width="800" alt="Tablet" />
+  <img src="assets/images/screenshot-light.png" width="800" alt="light mode" />
+  <img src="assets/images/screenshot-dark.png" width="800" alt="dark mode" />
 </p>
 
 
