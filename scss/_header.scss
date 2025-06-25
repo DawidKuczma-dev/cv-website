@@ -3,101 +3,101 @@
 @use 'darkmode-toggle';
 
 .header {
-   font-family: $ff-header;
-   position: relative;
-   overflow: visible;
-   margin-top: 29px;
-   height: 130px;
-   background-color: theme-get('primary-clr');
-   &__image {
-      position: absolute;
-      top: -9px;
-      left: 60px;
-      z-index: 999;
-      width: 180px;
-      height: 180px;
-      border: 5px solid theme-get('primary-clr');
-      border-radius: 50%;
-      overflow: hidden;
-      video {
-         height: 100%;
-         width: 100%;
-         object-fit: cover;
-         pointer-events: none;
+  font-family: $ff-header;
+  position: relative;
+  overflow: visible;
+  margin-top: 15px;
+  height: 130px;
+  background-color: theme-get('primary-clr');
+  &__image {
+    position: absolute;
+    top: -9px;
+    left: 60px;
+    z-index: 999;
+    width: 180px;
+    height: 180px;
+    border: 5px solid theme-get('primary-clr');
+    border-radius: 50%;
+    overflow: hidden;
+    video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 33px;
+    left: 265px;
+    color: theme-get('header-font-clr');
+    line-height: 0.9;
+    h1 {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      span {
+        display: block;
+        margin-left: 48px;
       }
-   }
-   &__title {
-      position: absolute;
-      top: 33px;
-      left: 265px;
-      color: theme-get('header-font-clr');
-      line-height: 0.9;
-      h1 {
-         text-transform: uppercase;
-         font-size: 2.5rem;
-         letter-spacing: 2px;
-         span {
-            display: block;
-            margin-left: 48px;
-         }
-      }
-      h2 {
-         font-weight: 400;
-         font-size: 0.9rem;
-         margin-left: 72px;
-      }
-   }
-   &__parallelogram {
-      position: absolute;
-      background-color: theme-get('header-clr2');
-      height: 130px;
-      width: 305px;
-      top: 65px;
-      left: -38px;
-      clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
-   }
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-left: 72px;
+    }
+  }
+  &__parallelogram {
+    position: absolute;
+    background-color: theme-get('header-clr2');
+    height: 130px;
+    width: 305px;
+    top: 65px;
+    left: -38px;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  }
 }
 
 .lang-switcher {
-   position: absolute;
-   top: 0;
-   right: 6px;
-   & button {
-      display: none;
-      width: 30px;
-      cursor: pointer;
-      &:hover {
-         transform: scale(1.1);
-      }
-      &.active {
-         display: block;
-      }
-   }
+  position: absolute;
+  top: 0;
+  right: 6px;
+  & button {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &.active {
+      display: block;
+    }
+  }
 }
 
 .theme-toggle {
-   @extend .darkmode-toggle;
-   &:checked + label {
-      background-color: theme-get('bg-clr', 'dark');
-   }
-   &:checked + label::after {
-      background: theme-get('sectionL-clr', 'dark');
-   }
+  @extend .darkmode-toggle;
+  &:checked + label {
+    background-color: theme-get('bg-clr', 'dark');
+  }
+  &:checked + label::after {
+    background: theme-get('sectionL-clr', 'dark');
+  }
 }
 
 .theme-label {
-   @extend .darkmode-label;
-   top: 35px;
-   right: 6px;
-   transform: scale(0.14) rotate(90deg) translateX(100%);
-   transform-origin: top right;
-   background-color: theme-get('bg-clr');
-   &::after {
-      background: theme-get('primary-clr');
-   }
-   .moon {
-      transform: rotate(-90deg);
-   }
+  @extend .darkmode-label;
+  top: 35px;
+  right: 6px;
+  transform: scale(0.14) rotate(90deg) translateX(100%);
+  transform-origin: top right;
+  background-color: theme-get('bg-clr');
+  &::after {
+    background: theme-get('primary-clr');
+  }
+  .moon {
+    transform: rotate(-90deg);
+  }
 }
 
 // .darkmode {

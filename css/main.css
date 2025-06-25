@@ -141,7 +141,7 @@ body.darkmode {
   font-family: "Poppins", sans-serif;
   position: relative;
   overflow: visible;
-  margin-top: 29px;
+  margin-top: 15px;
   height: 130px;
   background-color: #043382;
 }
@@ -237,6 +237,7 @@ body.darkmode {
   padding: 75px 20px 0;
   background-color: #191919;
   width: 250px;
+  height: calc(100vh - 145px);
   color: #ffffff;
   text-align: center;
 }
