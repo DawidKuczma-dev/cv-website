@@ -3,7 +3,7 @@
   "qr.bar": "Scan or click",
 
   "aboutMe.h1": "About me",
-  "aboutMe.p": "I'm independently developing my frontend skills by building projects using HTML, SASS, JavaScript and React. I enjoy solving problems and turning ideas into modern, aesthetic, and responsive websites. I'm looking for my first opportunity to join an IT team and grow in a professional environment.",
+  "aboutMe.p": "I’m growing as a frontend developer by creating projects and gaining practical experience with web technologies. I enjoy solving problems and turning ideas into modern, aesthetic, and responsive websites. I'm looking for my first opportunity to join an IT team and grow in a professional environment.",
 
   "language.title": "Languages",
   "language.polish": "Polish (native)",
@@ -12,7 +12,6 @@
   "skills.tag": "Skills",
   "skills.accordion": "I demonstrate my detailed skills best through practical work — feel free to check out my portfolio to see real projects and the technologies I’ve used.",
   "skills.rwd": "Responsive design (RWD)",
-  "skills.ui": "Creating UI components",
 
   "education.tag": "Education",
   "education.accordion1": "I made the decision to pause my studies to focus on self-development as a Frontend Developer with a goal to become full-stack. I am intensively learning HTML5, CSS3 (including SASS), JavaScript (ES6+), and React.",
@@ -33,6 +32,5 @@
   "experience.courier3": "Adaptability to changing work conditions",
 
   "goals.tag": "Goals",
-  "goals.accordion1": "I see TypeScript as a natural extension of JavaScript that helps create more predictable and scalable code. I plan to learn it to better prepare for teamwork on larger projects.",
-  "goals.accordion2": "I plan to learn backend development as a complementary step, aiming to grow into a Fullstack Developer in the future."
+  "goals.accordion1": "I'm planning to expand into backend development, starting with Node.js and Express, along with MongoDB. My goal is to gain a broader perspective on web applications and gradually grow into a Fullstack Developer."
 }

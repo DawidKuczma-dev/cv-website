@@ -3,7 +3,7 @@
   "qr.bar": "skan lub klik",
 
   "aboutMe.h1": "O mnie",
-  "aboutMe.p": "Samodzielnie rozwijam się w kierunku frontendu, tworząc projekty z wykorzystaniem HTML, SASS, JavaScript i React. Lubię rozwiązywać problemy i przekładać pomysły na nowoczesne, estetyczne i responsywne strony internetowe. Szukam pierwszej okazji, by dołączyć do zespołu IT i rozwijać się w środowisku komercyjnym.",
+  "aboutMe.p": "Rozwijam się jako frontend developer, tworząc projekty i ucząc się technologii webowych w praktyce. Lubię rozwiązywać problemy i przekładać pomysły na nowoczesne, estetyczne i responsywne strony internetowe. Szukam pierwszej okazji, by dołączyć do zespołu IT i rozwijać się w środowisku komercyjnym.",
 
   "language.title": "Języki",
   "language.polish": "Polski (ojczysty)",
@@ -12,7 +12,6 @@
   "skills.tag": "Umiejętności",
   "skills.accordion": "Szczegółowe umiejętności najlepiej prezentuję w praktyce – zapraszam do zapoznania się z moim portfolio, gdzie można zobaczyć realne projekty i zastosowane technologie.",
   "skills.rwd": "Responsywne projektowanie (RWD)",
-  "skills.ui": "Tworzenie komponentów UI",
 
   "education.tag": "Edukacja",
   "education.accordion1": "Podjąłem decyzję o przerwaniu studiów, aby skupić się na samodzielnym rozwoju w Frontend Developer z perspektywą full-stack. Intensywnie uczę się HTML5, CSS3 (w tym SASS), JavaScript (ES6+) oraz React.",
@@ -33,6 +32,5 @@
   "experience.courier3": "Adaptacja do zmiennych warunków pracy",
 
   "goals.tag": "Cele",
-  "goals.accordion1": "TypeScript traktuję jako naturalne rozszerzenie JavaScriptu, które pomaga tworzyć bardziej przewidywalny i skalowalny kod. Planuję jego naukę, aby lepiej przygotować się do pracy zespołowej przy większych projektach.",
-  "goals.accordion2": "Backend planuję jako etap uzupełniający, by w przyszłości rozwijać się jako Fullstack Developer."
+  "goals.accordion1": "Planuję rozwój w kierunku backendu, zaczynając od Node.js i Express, z wykorzystaniem MongoDB. Chcę zyskać szersze spojrzenie na aplikacje webowe i z czasem rozwijać się jako Fullstack Developer."
 }
