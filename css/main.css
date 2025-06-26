@@ -53,7 +53,6 @@ body.darkmode {
 .wrapper {
   overflow-x: hidden;
   width: 660px;
-  height: 100vh;
   margin: 0 auto;
   box-shadow: 0px 0px 100px -10px rgb(0, 0, 0);
 }
@@ -63,7 +62,7 @@ body.darkmode {
   justify-content: flex-end;
 }
 
-@media (min-height: 946px) and (min-width: 660px) {
+@media (min-height: 926px) and (min-width: 660px) {
   .wrapper {
     position: absolute;
     left: 50%;
@@ -237,7 +236,6 @@ body.darkmode {
   padding: 75px 20px 0;
   background-color: #191919;
   width: 250px;
-  height: calc(100vh - 145px);
   color: #ffffff;
   text-align: center;
 }
@@ -369,7 +367,7 @@ body.darkmode {
 .section-right {
   width: 375px;
   box-shadow: inset 0px 72px 59px -77px rgb(0, 0, 0);
-  padding: 15px 30px;
+  padding: 15px 30px 10px;
   font-size: 0.9rem;
 }
 .section-right__content div {
