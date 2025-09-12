@@ -10,6 +10,8 @@
     padding-left: 0;
     li {
       margin-right: $space-xs;
+      font-family: $font-secondary;
+      color: $color-text-secondary;
       font-size: $fs-rg;
     }
   }
@@ -19,6 +21,7 @@
     margin-top: $space-sm;
     a {
       text-transform: uppercase;
+      font-weight: 500;
       font-size: $fs-sm;
       @include highlight(1px);
     }
