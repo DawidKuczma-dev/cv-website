@@ -1,0 +1,12 @@
+.footer {
+  margin-top: $space-md;
+  &__title {
+    text-align: center;
+    font-size: $fs-rg;
+  }
+  .socials {
+    &__item {
+      width: 10%;
+    }
+  }
+}
