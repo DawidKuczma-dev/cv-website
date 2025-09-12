@@ -21,17 +21,6 @@
     font-weight: 500;
     animation-delay: 0.8s;
   }
-  .socials {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding-left: 0;
-    margin: $space-sm 0;
-    animation-delay: 0.6s;
-    &__item {
-      width: 15%;
-    }
-  }
   &__avatar {
     display: flex;
     justify-content: center;
@@ -73,5 +62,17 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 0;
+  margin: $space-sm 0;
+  animation-delay: 0.6s;
+  &__item {
+    width: 15%;
   }
 }
