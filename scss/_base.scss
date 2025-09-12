@@ -49,13 +49,19 @@ body {
 section {
   position: relative;
   padding-top: $space-lg;
-  &::after {
+  &::before,
+  &:last-of-type::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: -10px;
-    right: -10px;
+    transform: translateX(-$space-xxs);
+    width: calc(100% + #{$space-xxs * 2});
     height: 1px;
     background: $color-text-primary;
+  }
+  &::before {
+    top: 0;
+  }
+  &:last-of-type::after {
+    bottom: 0;
   }
 }
