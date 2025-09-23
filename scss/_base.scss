@@ -44,6 +44,7 @@ body {
   color: $color-text-primary;
   font-size: $fs-sm;
   padding: 0 $space-md;
+  overflow-x: hidden;
 }
 
 section {
