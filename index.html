@@ -122,9 +122,12 @@
     </section>
     <section class="projects">
       <h2 class="projects__title">Projekty</h2>
-
       <div class="projects__item">
-        <img src="assets/images/ToDoApp1.png" alt="Screenshot Portfolio" class="projects__image" />
+        <div class="projects__images">
+          <img src="assets/images/ToDoApp1.png" alt="" class="projects__first" draggable="false" />
+          <img src="assets/images/ToDoApp2.png" alt="" class="projects__second" draggable="false" />
+          <div class="projects__handle" aria-hidden="true"></div>
+        </div>
         <h3 class="projects__name">Portfolio</h3>
         <ul class="projects__tech">
           <li>Canvas</li>
@@ -144,11 +147,21 @@
         </div>
       </div>
       <div class="projects__item">
-        <img
-          src="assets/images/CountryExplorer1.png"
-          alt="Screenshot Country Explorer"
-          class="projects__image"
-        />
+        <div class="projects__images">
+          <img
+            src="assets/images/CountryExplorer1.png"
+            alt="Country explorer - main view with list of countries"
+            class="projects__first"
+            draggable="false"
+          />
+          <img
+            src="assets/images/CountryExplorer2.png"
+            alt="Country explorer - detailed view of the selected country"
+            class="projects__second"
+            draggable="false"
+          />
+          <div class="projects__handle" aria-hidden="true"></div>
+        </div>
         <h3 class="projects__name">Country Explorer</h3>
         <ul class="projects__tech">
           <li>React</li>
@@ -166,7 +179,21 @@
       </div>
 
       <div class="projects__item">
-        <img src="assets/images/ToDoApp1.png" alt="Screenshot To Do App" class="projects__image" />
+        <div class="projects__images">
+          <img
+            src="assets/images/ToDoApp1.png"
+            alt="To Do App - dark theme showing task list and controls"
+            class="projects__first"
+            draggable="false"
+          />
+          <img
+            src="assets/images/ToDoApp2.png"
+            alt="To Do App - light theme showing task list and controls"
+            class="projects__second"
+            draggable="false"
+          />
+          <div class="projects__handle" aria-hidden="true"></div>
+        </div>
         <h3 class="projects__name">To Do App</h3>
         <ul class="projects__tech">
           <li>HTML</li>

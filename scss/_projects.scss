@@ -1,5 +1,51 @@
 .projects {
   @include section;
+  &__images {
+    --pos: 50%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    touch-action: none;
+    cursor: ew-resize;
+  }
+  &__first {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+  }
+  &__second {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    pointer-events: none;
+    clip-path: inset(0 0 0 calc(var(--pos)));
+  }
+  &__handle {
+    position: absolute;
+    left: var(--pos);
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+    touch-action: none;
+    user-select: none;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+    }
+  }
   &__name {
     margin: $space-xxs 0;
     font-size: $fs-ms;
@@ -27,3 +73,7 @@
     }
   }
 }
+
+/* obraz w flow — wyznacza wysokość kontenera */
+
+/* obraz "after" zajmuje cały kontener i jest przycinany clip-path'em */

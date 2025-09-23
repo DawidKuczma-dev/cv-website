@@ -1,5 +1,5 @@
-import { initSlider } from './slider.js';
+import { initSliders } from './sliders.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSlider();
+  initSliders();
 });
