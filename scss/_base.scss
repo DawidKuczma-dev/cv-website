@@ -36,6 +36,12 @@ a {
 
 html {
   font-size: 62.5%;
+  @media (min-width: 390px) {
+    font-size: 68.75%;
+  }
+  @media (min-width: 615px) {
+    font-size: 75%;
+  }
 }
 
 body {

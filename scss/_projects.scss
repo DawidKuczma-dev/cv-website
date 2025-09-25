@@ -45,6 +45,13 @@
       background: #fff;
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
     }
+    @media (min-width: 615px) {
+      width: 4px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
   &__name {
     margin: $space-xxs 0;
@@ -73,7 +80,3 @@
     }
   }
 }
-
-/* obraz w flow — wyznacza wysokość kontenera */
-
-/* obraz "after" zajmuje cały kontener i jest przycinany clip-path'em */
