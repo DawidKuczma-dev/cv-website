@@ -5,8 +5,12 @@
     font-size: $fs-rg;
   }
   .socials {
+    @include socials-base;
     &__item {
       width: 10%;
+      @media (min-width: 1024px) {
+        width: 7%;
+      }
     }
   }
 }
