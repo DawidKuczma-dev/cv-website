@@ -15,3 +15,10 @@
     padding-bottom: $space-md;
   }
 }
+
+@mixin fade-in($delay: 0s, $duration: 1s, $translate: -250px) {
+  transform: translateY($translate);
+  opacity: 0;
+  animation: FadeIn $duration ease-out forwards;
+  animation-delay: $delay;
+}

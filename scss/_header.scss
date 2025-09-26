@@ -4,30 +4,53 @@
   height: 100vh;
   padding-bottom: $space-sm;
   text-align: center;
+  @media (min-width: 1024px) {
+    position: relative;
+    text-align: left;
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom: $space-lg;
+  }
   &__top {
     padding-top: $space-sm;
     margin: 0 $space-sm;
     background: linear-gradient(180deg, $color-bg 0%, $color-gradient 50%, $color-bg 100%);
     overflow: hidden;
-  }
-  &__logo,
-  .socials,
-  &__avatar {
-    transform: translateY(-250px);
-    opacity: 0;
-    animation: FadeIn 1s ease-out forwards;
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: $space-xxs;
+      margin: 0;
+      background: transparent;
+    }
   }
   &__logo {
     font-weight: 500;
-    animation-delay: 0.8s;
+    @include fade-in(0.8s);
+    @media (min-width: 1024px) {
+      @include fade-in(0s, 0.8s);
+    }
   }
   &__avatar {
     display: flex;
     justify-content: center;
-    animation-delay: 0.6s;
-    transform: translateY(250px);
+    @include fade-in(0.6s, 1s, 250px);
     img {
       height: 35vh;
+    }
+    @media (min-width: 1024px) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      background: linear-gradient(180deg, $color-bg 0%, $color-gradient 50%, $color-bg 100%);
+      transform: none;
+      opacity: 1;
+      animation: none;
+      img {
+        height: 70vh;
+        max-height: 430px;
+      }
     }
   }
   &__title {
@@ -36,10 +59,20 @@
     span {
       @include highlight();
     }
+    @media (min-width: 1024px) {
+      margin: $space-xl 0;
+      width: 70%;
+      font-size: $fs-xl;
+    }
   }
   &__intro {
     font-family: $font-secondary;
     color: $color-text-secondary;
+    @media (min-width: 1024px) {
+      width: 50%;
+      margin-bottom: $space-lg;
+      font-size: $fs-xs;
+    }
   }
   &__portfolio {
     font-size: $fs-lg;
@@ -47,13 +80,18 @@
     padding: $space-xxxxs 0;
     border: 2px solid $color-highlight;
     border-radius: 18px;
-    transition: 0.2s;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
     cursor: pointer;
     &:hover,
     &:active {
       background-color: $color-highlight;
       color: $color-bg;
       transform: scale(0.95);
+    }
+    @media (min-width: 1024px) {
+      width: 40%;
+      text-align: center;
+      font-size: $fs-md;
     }
   }
 }
@@ -65,14 +103,28 @@
   }
 }
 
-.socials {
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-  padding-left: 0;
-  margin: $space-sm 0;
-  animation-delay: 0.6s;
-  &__item {
-    width: 15%;
+nav {
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+    margin: $space-sm 0;
+    @include fade-in(0.6s);
+    &__item {
+      width: 15%;
+      cursor: pointer;
+      transition: 0.1s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    width: 20%;
+    .socials {
+      margin: 0;
+      @include fade-in(0s, 0.8s);
+    }
   }
 }
