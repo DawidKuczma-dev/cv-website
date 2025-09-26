@@ -31,6 +31,18 @@
       @include fade-in(0s, 0.8s);
     }
   }
+  .socials {
+    @include socials-base;
+    @include fade-in(0.6s);
+    @media (min-width: 1024px) {
+      width: 20%;
+      margin: 0;
+      @include fade-in(0s, 0.8s);
+    }
+    &__item {
+      width: 15%;
+    }
+  }
   &__avatar {
     display: flex;
     justify-content: center;
@@ -100,31 +112,5 @@
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-nav {
-  .socials {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding-left: 0;
-    margin: $space-sm 0;
-    @include fade-in(0.6s);
-    &__item {
-      width: 15%;
-      cursor: pointer;
-      transition: 0.1s;
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-  }
-  @media (min-width: 1024px) {
-    width: 20%;
-    .socials {
-      margin: 0;
-      @include fade-in(0s, 0.8s);
-    }
   }
 }

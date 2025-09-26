@@ -22,3 +22,18 @@
   animation: FadeIn $duration ease-out forwards;
   animation-delay: $delay;
 }
+
+@mixin socials-base {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 0;
+  margin: $space-sm 0;
+  &__item {
+    cursor: pointer;
+    transition: 0.1s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
