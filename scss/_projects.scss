@@ -1,5 +1,22 @@
 .projects {
   @include section;
+  &__list {
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: $space-md;
+    }
+  }
+  &__item {
+    @media (min-width: 1024px) {
+      width: 100%;
+      &:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 50%;
+      }
+    }
+  }
   &__images {
     --pos: 50%;
     position: relative;
@@ -56,6 +73,9 @@
   &__name {
     margin: $space-xxs 0;
     font-size: $fs-ms;
+    @media (min-width: 1024px) {
+      font-size: $fs-rg;
+    }
   }
   &__tech {
     display: flex;
@@ -66,6 +86,9 @@
       font-family: $font-secondary;
       color: $color-text-secondary;
       font-size: $fs-rg;
+      @media (min-width: 1024px) {
+        font-size: $fs-xs;
+      }
     }
   }
   &__links {
@@ -77,6 +100,15 @@
       font-weight: 500;
       font-size: $fs-sm;
       @include highlight(1px);
+      transition: transform 0.2s, background-color 0.2s, color 0.2s;
+      cursor: pointer;
+      &:hover {
+        color: $color-highlight;
+        transform: scale(1.05);
+      }
+      @media (min-width: 1024px) {
+        font-size: $fs-xs;
+      }
     }
   }
 }
