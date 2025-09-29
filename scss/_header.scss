@@ -61,7 +61,7 @@
       animation: none;
       img {
         height: 70vh;
-        max-height: 430px;
+        max-height: 410px;
       }
     }
   }
@@ -82,6 +82,7 @@
     color: $color-text-secondary;
     @media (min-width: 1024px) {
       width: 50%;
+      max-width: 540px;
       margin-bottom: $space-lg;
       font-size: $fs-xs;
     }
