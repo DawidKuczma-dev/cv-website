@@ -11,6 +11,8 @@
     color: $color-text-secondary;
     opacity: 0;
     transform: translateY(-50px);
+  }
+  &.in-view &__details {
     animation: FadeInDown 1s ease-out forwards;
   }
 }

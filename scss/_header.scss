@@ -95,16 +95,15 @@
     border-radius: 18px;
     transition: transform 0.2s, background-color 0.2s, color 0.2s;
     cursor: pointer;
-    &:hover,
-    &:active {
-      background-color: $color-highlight;
-      color: $color-bg;
-      transform: scale(0.95);
-    }
     @media (min-width: 1024px) {
       width: 40%;
       text-align: center;
       font-size: $fs-md;
+      &:hover {
+        background-color: $color-highlight;
+        color: $color-bg;
+        transform: scale(0.95);
+      }
     }
   }
 }

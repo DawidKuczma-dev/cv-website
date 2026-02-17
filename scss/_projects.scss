@@ -102,12 +102,12 @@
       @include highlight(1px);
       transition: transform 0.2s, background-color 0.2s, color 0.2s;
       cursor: pointer;
-      &:hover {
-        color: $color-highlight;
-        transform: scale(1.1);
-      }
       @media (min-width: 1024px) {
         font-size: $fs-xs;
+        &:hover {
+          color: $color-highlight;
+          transform: scale(1.1);
+        }
       }
     }
   }

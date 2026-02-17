@@ -19,19 +19,33 @@
       font-size: $fs-xl;
       transform: translateY(550px);
       opacity: 0;
-      animation: fadeInUp 1s ease-out forwards;
     }
     ul {
       list-style-type: none;
       padding-left: 0;
       transform: translateX(270px);
       opacity: 0;
-      animation: fadeInRight 0.5s ease-out forwards;
       li {
         font-size: $fs-xs;
         font-family: $font-secondary;
         color: $color-text-secondary;
       }
+    }
+    @media (min-width: 1024px) {
+      h3,
+      ul {
+        animation: none;
+        transform: none;
+        opacity: 1;
+      }
+    }
+  }
+  &.in-view &__category {
+    h3 {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    ul {
+      animation: fadeInRight 0.5s ease-out forwards;
     }
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) {
@@ -41,14 +55,6 @@
         ul {
           animation-delay: (($i - 1) * 0.5s) + 1s;
         }
-      }
-    }
-    @media (min-width: 1024px) {
-      h3,
-      ul {
-        animation: none;
-        transform: none;
-        opacity: 1;
       }
     }
   }

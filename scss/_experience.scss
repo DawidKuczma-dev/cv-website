@@ -24,7 +24,6 @@
     li {
       opacity: 0;
       transform: translateX(300px);
-      animation: fadeInRight 1s ease-out forwards;
       &::before {
         content: '-';
         display: inline-block;
@@ -35,6 +34,11 @@
           animation-delay: ($i - 1) * 0.5s + 0.5s;
         }
       }
+    }
+  }
+  &.in-view &__details {
+    li {
+      animation: fadeInRight 1s ease-out forwards;
     }
   }
 }
