@@ -6,15 +6,13 @@
   padding-bottom: $space-xxxs;
   overflow: hidden;
   @media (min-width: 1024px) {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
   &__category {
     width: 45%;
     padding-bottom: $space-md;
     @media (min-width: 1024px) {
-      width: 30%;
+      display: flex;
+      width: 100%;
     }
     h3 {
       display: flex;
@@ -24,6 +22,10 @@
       font-size: $fs-md;
       transform: translateY(550px);
       opacity: 0;
+      @media (min-width: 1024px) {
+        text-align: left;
+        max-width: 210px;
+      }
     }
     ul {
       list-style-type: none;
@@ -31,12 +33,20 @@
       padding-left: 0;
       transform: translateX(-270px);
       opacity: 0;
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+      }
       li {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         font-size: $fs-sm;
         padding-bottom: $space-xxs;
+        @media (min-width: 1024px) {
+          width: 32%;
+        }
         span {
           width: 100%;
           font-size: $fs-xs;
@@ -52,7 +62,8 @@
     }
     @media (min-width: 1024px) {
       h3,
-      ul {
+      ul,
+      &:last-child ul {
         animation: none;
         transform: none;
         opacity: 1;
