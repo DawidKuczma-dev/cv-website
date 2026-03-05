@@ -1,7 +1,8 @@
 .skills {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
   padding-bottom: $space-xxxs;
   overflow: hidden;
   @media (min-width: 1024px) {
@@ -9,26 +10,44 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
   &__category {
+    width: 45%;
     padding-bottom: $space-md;
     @media (min-width: 1024px) {
       width: 30%;
     }
     h3 {
-      font-size: $fs-xl;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 54px;
+      font-size: $fs-md;
       transform: translateY(550px);
       opacity: 0;
     }
     ul {
       list-style-type: none;
+      margin-top: $space-xxs;
       padding-left: 0;
-      transform: translateX(270px);
+      transform: translateX(-270px);
       opacity: 0;
       li {
-        font-size: $fs-xs;
-        font-family: $font-secondary;
-        color: $color-text-secondary;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: $fs-sm;
+        padding-bottom: $space-xxs;
+        span {
+          width: 100%;
+          font-size: $fs-xs;
+          font-family: $font-secondary;
+          color: $color-text-secondary;
+        }
+      }
+    }
+    &:last-child {
+      ul {
+        transform: translateX(270px);
       }
     }
     @media (min-width: 1024px) {
@@ -45,17 +64,7 @@
       animation: fadeInUp 1s ease-out forwards;
     }
     ul {
-      animation: fadeInRight 0.5s ease-out forwards;
-    }
-    @for $i from 1 through 6 {
-      &:nth-child(#{$i}) {
-        h3 {
-          animation-delay: ($i - 1) * 0.5s;
-        }
-        ul {
-          animation-delay: (($i - 1) * 0.5s) + 1s;
-        }
-      }
+      animation: fadeInSide 0.5s 0.7s ease-out forwards;
     }
   }
 }
@@ -67,7 +76,7 @@
   }
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInSide {
   to {
     transform: translateX(0);
     opacity: 1;
