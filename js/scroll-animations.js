@@ -1,6 +1,6 @@
 export function initScrollAnimations() {
   const sectionsConfig = [
-    { selector: '.skills', threshold: 0.8 },
+    { selector: '.skills', threshold: 0.5 },
     { selector: '.education', threshold: 0.5 },
     { selector: '.experience', threshold: 0.7 },
   ];

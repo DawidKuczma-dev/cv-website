@@ -57,6 +57,9 @@ html {
     font-size: 93.75%;
   }
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
   background-color: #151515;
@@ -262,7 +265,7 @@ section:last-of-type::after {
   overflow: hidden;
 }
 .skills__category {
-  width: 45%;
+  width: 50%;
   padding-bottom: 2.5rem;
 }
 @media (min-width: 1024px) {
