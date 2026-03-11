@@ -19,12 +19,12 @@
       justify-content: center;
       align-items: center;
       min-height: 54px;
-      font-size: $fs-md;
+      font-size: $fs-ms;
       transform: translateY(550px);
       opacity: 0;
       @media (min-width: 1024px) {
         text-align: left;
-        max-width: 210px;
+        max-width: 260px;
       }
     }
     ul {
